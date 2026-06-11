@@ -169,6 +169,7 @@ they operate on higher timeframe grids (15-minute or 30-minute horizons). The pr
 at the vertex, and spikes violently back up before the higher timeframe candle can close.
 By the time the 15-minute candle prints, the entire drop has been completely erased, leaving behind nothing but an 
 authoritative lower shadow wick.
+
 The Golden Rule: Never classify an institutional boundary as broken based on a micro-timeframe 1-minute or 5-minute candle close.
 Only a clean 15-minute candle body close determines structural failure.
 The Live Skew DriftSometimes, a 15-minute candle body closes below your pre-market line, but then the market suddenly
@@ -199,6 +200,38 @@ the price toward it.
 The Skew-Adjusted Vertex (Dynamic Reality Core): The Strongest Mathematical Signal. It takes the Weekly Wall 
 and recalculates it using live volatility gradients to pinpoint the exact dollar coordinate where the institutional
 buy blocks are actually resting real-time inside your Sweep Zone playground.
+
+=========================================================================================
+🗺️ HOW TO MAP BOTH SIDES (The FUTURE BLUEPRINT)
+
+For every upcoming session ahead of the opening bell, extract and lock in these exact coordinates from your terminal [1DTE/Weekly matrix]:
+
+🔴 Side 1: The Downside Skew-Adjusted Wall (Fade Retail Panic)
+
+The Formulation: The exact convergence point where the Major Put Wall, 1DTE/Weekly Option Support Shelf, and Overnight Session Liquidity Pools
+(like your Asian Low) compress tightly together [1DTE/Weekly matrix].The Order Flow Purpose: This marks the absolute limit of the downward 
+stop-run inventory cleanout. It dictates the precise zone where you look to Play the Wick for a sharp, V-bottom long reversal once an IV Crush is verified.
+
+🔵 Side 2: The Upside Skew-Adjusted Wall (Fade Retail Squeeze)
+
+The Formulation: The exact convergence point where the Major Call Wall, 0DTE/Weekly Max Pain Target, and Overnight Session Highs
+(like your London High) stack directly on top of each other [1DTE/Weekly matrix].
+The Order Flow Purpose: This marks the absolute limit of the upward vanna re-hedging squeeze. It dictates the precise coordinate where you look to Play the Wick for an institutional short reversal once the volatility index hits a local exhaustion high and turns down.
+
+⚙️ THE TWO OPERATIONAL CORRIDORS MATRIXBy locking both sides onto your chart canvas, you establish the clean, noise-free parameters needed to execute the core rules:
+
+[UPSIDE SKEW-ADJUSTED CEILING] ═► $29,050.00 to $29,099.91 (Stacked Call Walls / Max Pain)
+
+【 THE OPERATIONAL VOLATILITY CORRIDOR 】
+                                         
+• Flat Volatility at Low = Grind Upward
+• Spiking Volatility to High = Accelerated Flush
+
+[DOWNSIDE SKEW-ADJUSTED FLOOR]  ═► $28,649.00 (Technical Base Cluster / 15-Min VWAP Stack)
+
+==========================================================================================
+
+
 
 💻 GitHub Repository Initialization ScriptTo compile and commit this full master framework into your quantitative execution library:
 bash
