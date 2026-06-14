@@ -41,7 +41,7 @@ close their asset ledgers.
 The Clock Reset (The London Fix) — 
 The machine must clear international currency mismatches at 11:00 AM NY time.
 
-=====================================================================
+====================================================================
 
 ⚙️ Gear 3: The Silent Shield (Engine 3)
 
