@@ -77,7 +77,7 @@ The Closing Pin (Quad Witching MOC) —
 The machine must force a late-day stop-run before locking the closing price flat to match 
 trillion-dollar index weightings
 
-=====================================================================
+====================================================================
 
 
 
@@ -194,7 +194,7 @@ Here is the exact structural explanation of why the Nasdaq 100 cannot escape the
    every single institutional flow on the screen.
 
 
-=======================================================================
+====================================================================
 Here is the exact, step-by-step blueprint of how to operates every single day.
 
 1.  Map the Landscape (Pre-Market Architecture)
@@ -228,7 +228,7 @@ Here is the exact, step-by-step blueprint of how to operates every single day.
   
   [03:50 PM EST] ──► Deploys arbitrage capital to harvest the MOC Imbalance stop-run sweeps.
     
-=====================================================================
+====================================================================
  Use the Live Tape as a Lie Detector
  
  When the index flushes into a major structural floor, watch the live tape execution to see who is 
