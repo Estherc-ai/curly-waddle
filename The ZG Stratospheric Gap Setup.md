@@ -25,11 +25,12 @@ The width of the opening bid-ask spread does not alter the ultimate destination
 (the dominant Call Wall). Instead, it acts as the mechanical throttle that 
 determines the speed, trajectory, and psychological complexity of the journey.
 
-[+] REGIME: ZG STRATOSPHERIC GAP OPENING
 
-│
+ REGIME: ZG STRATOSPHERIC GAP OPENING
 
- [OPTION BRANCH 1]: WIDE SPREAD OPEN
+
+
+###  [OPTION BRANCH 1]: WIDE SPREAD OPEN
 
 ├── CORE CONDITION: High market-maker risk and model uncertainty.
 
@@ -44,7 +45,7 @@ determines the speed, trajectory, and psychological complexity of the journey.
 
 
 
- [OPTION BRANCH 2]: TIGHT SPREAD OPEN
+###  [OPTION BRANCH 2]: TIGHT SPREAD OPEN
 
 ├── CORE CONDITION: Market-maker risk curves are already fully synced.
     
