@@ -108,7 +108,8 @@ $$\text{GEX}_{\text{Skew-Adjusted}}(K) = \text{OI}(K) \times \left[ \frac{\parti
 * **$\Phi_{\text{LOB}}$** = The Limit Order Book Elasticity Coefficient, adjusting for cross-exchange liquidity depletion during a flush
 
 
-SECTION 4: THE TIMELINE MATRIX (WHEN TO USE IT)
+
+###SECTION 4: THE TIMELINE MATRIX (WHEN TO USE IT)
 The Skew-Adjusted Vertex exhibits a dual nature. It is simultaneously a static pre-market anchor and a live, fluid calculation. 
 You must apply completely different execution rules based on the market clock.
 
