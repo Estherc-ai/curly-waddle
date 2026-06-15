@@ -93,17 +93,23 @@ The total Net GEX background value defines whether the market-maker environment 
 ## 4. Execution Step-by-Step Confirmation Blueprint
 
 [09:00 AM] Validate Pre-Conditions: Spot >1.5% above ZG | OI Net GEX > 1.0 | Vol GEX < 0.5
-    │
+
+     
     ▼
+    
 [09:30 AM] Assess the Throttle: If Wide Spreads, Stand Aside. If Tight Spreads, Prepare Entry.
-    │
+    
     ▼
+    
 [09:45 AM - 10:00 AM] The Spread-Snap (If Wide): Wait for spreads to tighten and inject DOM depth.
-    │
+   
+    
     ▼
+    
 [EXECUTION TRIGGER] Buy first 5-Min Candle Body Close above the opening range shelf.
-    │
+    
     ▼
+    
 [11:30 AM NY LOCK] Set Hard Alert for London Close. Monitor for Mean-Reversion Flush to Target Wall.
 
 
