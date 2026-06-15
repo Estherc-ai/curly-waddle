@@ -16,28 +16,31 @@ To validate the setup before the regular trading hours (RTH) session begins (09:
 
 ---
 
-====================================================================================================
-THE VELOCITY THROTTLE MATRIX (COMPACT 80-CHARACTER MAXIMUM FOR GITHUB/MOBILE MARKDOWN)
-====================================================================================================
+
+
+THE VELOCITY THROTTLE MATRIX (VERTICAL STRUCTURED LIST FOR ZERO WRAPPING ERRORS)
+
 
 The width of the opening bid-ask spread does not alter the ultimate destination 
 (the dominant Call Wall). Instead, it acts as the mechanical throttle that 
 determines the speed, trajectory, and psychological complexity of the journey.
 
-┌──────────────────────────────────────────────────────────────────────────┐
-│                       ZG STRATOSPHERIC GAP OPENING                       │
-└────────────────────────────────────┬─────────────────────────────────────┘
-                                     │
-                  ┌──────────────────┴──────────────────┐
-                  ▼                                     ▼
-    ┌───────────────────────────┐         ┌───────────────────────────┐
-    │     WIDE SPREAD OPEN      │         │     TIGHT SPREAD OPEN     │
-    ├───────────────────────────┤         ├───────────────────────────┤
-    │ • MM Risk Uncertainty     │         │ • MM Risk Already Synced  │
-    │ • Slow TWAP/VWAP Churn    │         │ • Immediate Market Orders │
-    │ • Agonizing Morning Range │         │ • High-Velocity Sprint    │
-    │ • Wait for "Spread-Snap"  │         │ • Instant Body Breakout   │
-    └───────────────────────────┘         └───────────────────────────┘
+[+] REGIME: ZG STRATOSPHERIC GAP OPENING
+│
+├── [OPTION BRANCH 1]: WIDE SPREAD OPEN
+│   ├── CORE CONDITION: High market-maker risk and model uncertainty.
+│   ├── INTRADAY METRIC: Low live volume relative to high resting OI.
+│   ├── MM HEDGING LOOPS: Deploys slow, patient TWAP/VWAP futures accumulation.
+│   ├── PRICE TRAJECTORY: An agonizing, choppy morning range to clear spreads.
+│   └── EXECUTION RULE: Stand aside; wait for the definitive "Spread-Snap".
+│
+└── [OPTION BRANCH 2]: TIGHT SPREAD OPEN
+    ├── CORE CONDITION: Market-maker risk curves are already fully synced.
+    ├── INTRADAY METRIC: High immediate liquidity and matched pre-market flow.
+    ├── MM HEDGING LOOPS: Triggers instant, aggressive automated market orders.
+    ├── PRICE TRAJECTORY: A high-velocity, frictionless sprint to the wall.
+    └── EXECUTION RULE: Immediate entry on the first 5-min candle body close.
+
 
 
 
