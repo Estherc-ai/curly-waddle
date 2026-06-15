@@ -7,7 +7,7 @@ It tells you exactly where the "trampoline button" sits to halt the opening vola
 
 
 
-SECTION 1: MASTER DEFINITIONS (THE CORE ARCHITECTURE)
+###SECTION 1: MASTER DEFINITIONS (THE CORE ARCHITECTURE)
 
 📊 The Professional Definition:  The Dynamic Skew-Adjusted Vertex is the mathematically 
 optimized, point-in-time strike price coordinate where option market maker (dealer) 
@@ -47,7 +47,7 @@ buy switch that causes the price to violently reverse upward.
 
 
 
-SECTION 2: THE OPERATIONAL MATRIX (THE GRID DESIGN)
+###SECTION 2: THE OPERATIONAL MATRIX (THE GRID DESIGN)
 To strip away market noise, institutional execution desks map the market using a structured,
 three-tiered defense grid. Each layer represents a completely different layer of 
 market participant order flow.[ SPOT PRICE / CASH OPEN ]
