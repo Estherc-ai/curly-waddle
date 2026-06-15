@@ -42,6 +42,8 @@ determines the speed, trajectory, and psychological complexity of the journey.
 └── EXECUTION RULE: Stand aside; wait for the definitive "Spread-Snap".
 
 
+
+
  [OPTION BRANCH 2]: TIGHT SPREAD OPEN
 
 ├── CORE CONDITION: Market-maker risk curves are already fully synced.
