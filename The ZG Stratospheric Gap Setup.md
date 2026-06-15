@@ -19,20 +19,23 @@ To validate the setup before the regular trading hours (RTH) session begins (09:
 ## 2. Velocity Throttle Matrix: Wide Spread vs Tight Spread
 
 The width of the opening bid-ask spread does not alter the ultimate destination (the dominant Call Wall). Instead, it acts as the mechanical throttle that determines the speed, trajectory, and psychological complexity of the journey.
-                  ┌────────────────────────────────────────┐
-                  │      ZG STRATOSPHERIC GAP OPENING      │
-                  └───────────────────┬────────────────────┘
-                                      │
-             ┌────────────────________┴________________________┐
-             ▼                                                 ▼
-┌───────────────────────────┐                     ┌───────────────────────────┐
-│     WIDE SPREAD OPEN      │                     │     TIGHT SPREAD OPEN     │
-├───────────────────────────┤                     ├───────────────────────────┤
-│ • MM Risk Uncertainty     │                     │ • MM Risk Already Synced  │
-│ • Slow TWAP/VWAP Churn    │                     │ • Immediate Market Orders │
-│ • Agonizing Morning Range │                     │ • High-Velocity Sprint    │
-│ • Wait for "Spread-Snap"  │                     │ • Instant Body Breakout   │
-└───────────────────────────┘                     └────────────────___________┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   ZG STRATOSPHERIC GAP OPENING                                   │
+└────────────────────────────────────────────────┬─────────────────────────────────────────────────┘
+                                                 │
+                        ┌────────────────────────┴────────────────────────┐
+                        ▼                                                 ▼
+          ┌───────────────────────────┐                     ┌───────────────────────────┐
+          │     WIDE SPREAD OPEN      │                     │     TIGHT SPREAD OPEN     │
+          ├───────────────────────────┤                     ├───────────────────────────┤
+          │ • MM Risk Uncertainty     │                     │ • MM Risk Already Synced  │
+          │ • Slow TWAP/VWAP Churn    │                     │ • Immediate Market Orders │
+          │ • Agonizing Morning Range │                     │ • High-Velocity Sprint    │
+          │ • Wait for "Spread-Snap"  │                     │ • Instant Body Breakout   │
+          └───────────────────────────┘                     └───────────────────────────┘
+
 
 ### A. The Wide-Spread Regime (The Slow Throttle)
 * Market-Maker Behavior: Algorithms build wide, fluid bid-ask spreads ("Wide Walls") right at the open as a tactical safety buffer. MMs face high delta-hedging uncertainty through the unhedged vacuum, so they refuse to execute large market orders of futures contracts to avoid self-inflicted slippage.
