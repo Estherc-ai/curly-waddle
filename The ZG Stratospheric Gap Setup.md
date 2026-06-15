@@ -145,3 +145,62 @@ You must immediately abort the setup or stand aside if any of the following anti
 ⚠️ The Price Rise / IV Rise Divergence at Key Walls: If the price approaches the Master Target Wall while Implied Volatility (IV) and VIX violently spike in tandem, the market has transitioned into a highly volatile High IV short-gamma squeeze loop. While this can accelerate the upside, it means the walls are completely fluid. Do NOT assume the target wall will hold as resistance; it is highly vulnerable to a complete blowout.
 
 ⚠️ The VIX Hook on the Downside Flush: During the 11:30 AM London close pullback, if the price drops to the target wall but the VIX continues to spike aggressively upward without crushing back down, it warns you that panic put-buying has entered the tape. The wall is failing, and you must stand aside as a deeper liquidation cascade is taking over.
+
+
+
+
+
+### 📝 ZG Stratospheric Gap: Velocity Throttle Summary
+The structural width of the opening spread serves exclusively as the mechanical throttle governing the velocity and trajectory of the move toward the target wall. Under a high-conviction Stratospheric Gap configuration, the mathematical gravity of the dominant Call Wall remains absolute.
+
+```text
+================================================================================
+THE VELOCITY THROTTLE MATRIX (VERTICAL STRUCTURED LIST FOR ZERO WRAPPING ERRORS)
+================================================================================
+[+] REGIME: ZG STRATOSPHERIC GAP OPENING
+│
+├── [OPTION BRANCH 1]: WIDE SPREAD OPEN
+│   ├── CORE CONDITION: High market-maker risk and model uncertainty.
+│   ├── INTRADAY METRIC: Low live volume relative to high resting OI.
+│   ├── MM HEDGING LOOPS: Deploys slow, patient TWAP/VWAP futures accumulation.
+│   ├── PRICE TRAJECTORY: An agonizing, choppy morning range to clear spreads.
+│   └── EXECUTION RULE: Stand aside; wait for the definitive "Spread-Snap".
+│
+└── [OPTION BRANCH 2]: TIGHT SPREAD OPEN
+    ├── CORE CONDITION: Market-maker risk curves are already fully synced.
+    ├── INTRADAY METRIC: High immediate liquidity and matched pre-market flow.
+    ├── MM HEDGING LOOPS: Triggers instant, aggressive automated market orders.
+    ├── PRICE TRAJECTORY: A high-velocity, frictionless sprint to the wall.
+    └── EXECUTION RULE: Immediate entry on the first 5-min candle body close.
+```
+
+### 💻 Automated Pine Script Alert Engine
+Paste the script below into the Pine Editor on TradingView to track the real-time institutional spread width and alert your execution terminal when the market-maker risk models sync.
+
+```pinescript
+//@version=5
+indicator("Institutional Spread Tracker & Alert Engine", overlay=false)
+
+// ──── INPUT PARAMETERS ────
+spreadThreshold = input.float(2.0, title="Spread Tightening Threshold (Points/Ticks)", tooltip="Triggers when spread drops below this value")
+lookbackPeriod   = input.int(10, title="Spread Baseline Lookback", tooltip="Number of bars to calculate the average wide spread")
+
+// ──── TICK MECHANICS ────
+liveSpread = syminfo.ask - syminfo.bid
+avgSpread = ta.sma(liveSpread, lookbackPeriod)
+
+// ──── MECHANICAL INFLECTION CONDITIONAL LOGIC ────
+spreadSnapTrigger = (liveSpread <= spreadThreshold) and (liveSpread[1] > spreadThreshold)
+spreadWidenWarning = (liveSpread > avgSpread * 1.5) and (liveSpread[1] <= avgSpread * 1.5)
+
+// ──── VISUAL VISUALIZATION ANCHORS ────
+plot(liveSpread, title="Live Bid-Ask Spread Delta", color=liveSpread > spreadThreshold ? color.red : color.green, style=plot.style_columns)
+plot(spreadThreshold, title="Institutional Tightening Threshold Baseline", color=color.white, style=plot.style_dashed)
+
+plotshape(spreadSnapTrigger, title="Spread-Snap Milestone Confirmed", style=shape.triangleup, location=location.bottom, color=color.green, size=size.small)
+plotshape(spreadWidenWarning, title="Warning: MM Safety Spread Widened", style=shape.triangledown, location=location.top, color=color.red, size=size.small)
+
+// ──── HARDCODED AUTOMATED ALERT ENGINES ────
+alertcondition(spreadSnapTrigger, title="[Institutional Alert] Spread-Snap Confirmed", message="MARKET MAKER RISK MODELS SYNCED: Bid-Ask spread has snapped tight below {{spreadThreshold}} points. High-velocity friction-free sprint to dominant Call Wall is primed. Verify candle body breakout.")
+alertcondition(spreadWidenWarning, title="[Institutional Alert] MM Safety Spread Widened", message="WARNING: Market-maker algorithms have wide-spread the DOM book. Risk uncertainty is high. Expect an annoying, low-volume morning accumulation range. Implement patience protocol.")
+```
