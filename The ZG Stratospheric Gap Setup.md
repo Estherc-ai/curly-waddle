@@ -19,7 +19,6 @@ To validate the setup before the regular trading hours (RTH) session begins (09:
 ## 2. Velocity Throttle Matrix: Wide Spread vs Tight Spread
 
 The width of the opening bid-ask spread does not alter the ultimate destination (the dominant Call Wall). Instead, it acts as the mechanical throttle that determines the speed, trajectory, and psychological complexity of the journey.
-
                   ┌────────────────────────────────────────┐
                   │      ZG STRATOSPHERIC GAP OPENING      │
                   └───────────────────┬────────────────────┘
