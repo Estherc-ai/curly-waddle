@@ -204,3 +204,19 @@ plotshape(spreadWidenWarning, title="Warning: MM Safety Spread Widened", style=s
 alertcondition(spreadSnapTrigger, title="[Institutional Alert] Spread-Snap Confirmed", message="MARKET MAKER RISK MODELS SYNCED: Bid-Ask spread has snapped tight below {{spreadThreshold}} points. High-velocity friction-free sprint to dominant Call Wall is primed. Verify candle body breakout.")
 alertcondition(spreadWidenWarning, title="[Institutional Alert] MM Safety Spread Widened", message="WARNING: Market-maker algorithms have wide-spread the DOM book. Risk uncertainty is high. Expect an annoying, low-volume morning accumulation range. Implement patience protocol.")
 ```
+
+
+
+## ⚙️ Optimal Indicator Configurations: NQ vs. MNQ
+
+Because standard E-mini Nasdaq-100 (**NQ**) futures and Micro E-mini (**MNQ**) futures feature different contract specifications, tick values, and order book depths, you must calibrate the input variables of the script precisely to prevent false signals or missed alerts.
+
+Use the calibrated parameters below when configuring the `spreadThreshold` input float inside your TradingView settings menu:
+
+| Metric / Parameter | 📈 NQ Futures (E-mini) | 🔬 MNQ Futures (Micro) | Mechanical / Structural Rationale |
+| :--- | :--- | :--- | :--- |
+| **`spreadThreshold` Input** | `0.50` to `0.75` Points | `0.25` to `0.50` Points | MNQ order book queues feature smaller contract sizes, causing retail spreads to tighten faster than the heavy institutional blocks on NQ. |
+| **Minimum Tick Increments** | `0.25` Points ($5.00/contract) | `0.25` Points ($0.50/contract) | Both instruments feature matching pricing scales, but the capital weight behind individual NQ ticks requires a wider model buffer. |
+| **`lookbackPeriod` Input** | `10` Bars | `15` Bars | MNQ prints micro-ticks at higher speeds due to fractional size retail volume, necessitating a longer smoothing lookback window. |
+| **Safety Wall Behavior** | Rapidly Widens (`2.00`+ Points) | Marginally Widens (`1.00`+ Points) | Institutional market-making desks dynamically yank massive block liquidity on NQ during dislocations, inflating spreads instantly. |
+| **Execution Trigger Style** | Wait for `Spread-Snap` to settle | Immediate execution on close | Heavy slippage risk makes trading wide NQ spreads dangerous; tight MNQ books permit faster fill execution with low retail drag. |
