@@ -26,20 +26,33 @@ The width of the opening bid-ask spread does not alter the ultimate destination
 determines the speed, trajectory, and psychological complexity of the journey.
 
 [+] REGIME: ZG STRATOSPHERIC GAP OPENING
+
 │
-├── [OPTION BRANCH 1]: WIDE SPREAD OPEN
-│   ├── CORE CONDITION: High market-maker risk and model uncertainty.
-│   ├── INTRADAY METRIC: Low live volume relative to high resting OI.
-│   ├── MM HEDGING LOOPS: Deploys slow, patient TWAP/VWAP futures accumulation.
-│   ├── PRICE TRAJECTORY: An agonizing, choppy morning range to clear spreads.
-│   └── EXECUTION RULE: Stand aside; wait for the definitive "Spread-Snap".
-│
-└── [OPTION BRANCH 2]: TIGHT SPREAD OPEN
-    ├── CORE CONDITION: Market-maker risk curves are already fully synced.
-    ├── INTRADAY METRIC: High immediate liquidity and matched pre-market flow.
-    ├── MM HEDGING LOOPS: Triggers instant, aggressive automated market orders.
-    ├── PRICE TRAJECTORY: A high-velocity, frictionless sprint to the wall.
-    └── EXECUTION RULE: Immediate entry on the first 5-min candle body close.
+
+ [OPTION BRANCH 1]: WIDE SPREAD OPEN
+
+├── CORE CONDITION: High market-maker risk and model uncertainty.
+
+├── INTRADAY METRIC: Low live volume relative to high resting OI.
+
+├── MM HEDGING LOOPS: Deploys slow, patient TWAP/VWAP futures accumulation.
+
+├── PRICE TRAJECTORY: An agonizing, choppy morning range to clear spreads.
+  
+└── EXECUTION RULE: Stand aside; wait for the definitive "Spread-Snap".
+
+
+ [OPTION BRANCH 2]: TIGHT SPREAD OPEN
+
+├── CORE CONDITION: Market-maker risk curves are already fully synced.
+    
+├── INTRADAY METRIC: High immediate liquidity and matched pre-market flow.
+    
+├── MM HEDGING LOOPS: Triggers instant, aggressive automated market orders.
+
+├── PRICE TRAJECTORY: A high-velocity, frictionless sprint to the wall.
+
+└── EXECUTION RULE: Immediate entry on the first 5-min candle body close.
 
 
 
