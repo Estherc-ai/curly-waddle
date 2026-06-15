@@ -49,25 +49,28 @@ three-tiered defense grid. Each layer represents a completely different layer of
 market participant order flow.[ SPOT PRICE / CASH OPEN ]
       │
       ▼
-=========================================================================================
+
 🟢 TIER 1: RAW RETAIL BAIT ZONE (Visual Friction Only)
-=========================================================================================
+
    • Core Metric: Dynamic 1-Standard Deviation Morning Band
    • Simple View: Moving averages, round numbers, standard retail pivots.
    • Machine Intent: Induce immediate retail participation; cluster trailing stops.
       │
       ▼ [LIQUIDITY FLUSH VACUUM CORRIDOR 1]
-=========================================================================================
+      
+
 🟡 TIER 2: ADVANCED "SMART" RETAIL BAIT ZONE (Pseudo-Advanced Trap)
-=========================================================================================
+
    • Core Metric: Nominal / Unadjusted Options Put Wall Baseline
    • Simple View: Raw Open Interest (OI) spikes, unadjusted Net GEX bar charts.
    • Machine Intent: Trap "Smart Money" order block traders; engineer liquidation velocity.
       │
       ▼ [SKEW-ACCELERATION VACUUM CORRIDOR 2]
-=========================================================================================
+
+
 🟣 TIER 3: SKEW-ADJUSTED INSTITUTIONAL VERTEX (True Risk Firewall)
-=========================================================================================
+
+
    • Core Metric: Volatility Smile Skew Gradient Vector Confluence
    • Simple View: The hidden "Lead Blocks" node where dealer capital is heavily defended.
    • Machine Intent: Deploy massive passive limit block absorption; launch true move.
