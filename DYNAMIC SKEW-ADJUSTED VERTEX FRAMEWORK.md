@@ -1,6 +1,6 @@
-
+==================================================
 QUANTITATIVE DERIVATIVES STUDY LOG: THE COMPLETE DYNAMIC SKEW-ADJUSTED VERTEX FRAMEWORK
-
+==================================================
 
 The Playbook Rule: Use this fixed coordinate exclusively to capture the initial, high-volume cash open flush.
 It tells you exactly where the "trampoline button" sits to halt the opening volatility cascade.
