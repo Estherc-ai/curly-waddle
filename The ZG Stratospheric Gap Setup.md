@@ -5,8 +5,11 @@
 To validate the setup before the regular trading hours (RTH) session begins (09:00 AM – 09:25 AM NY Time), you must cross-verify the pre-market data against four strict quantitative pillars. If any pillar is missing, the setup is invalid.
 
 [SPOT PRICE] ------------> Opens +1.5% to +3.0% Above ZG Pivot (Stratospheric Dislocation)
+
 [OI NET GEX] -----------> Ratio > 1.0 (Heavy Outstanding Overhead Call Liabilities)
+
 [VOL NET GEX] ----------> Ratio < 0.5 (Thin Pre-Market Real-Time Hedging Volume)
+
 [DIFFERENTIAL] --------> OI Net GEX vs Vol Net GEX Divergence (Unhedged Gamma Desert)
 
 ### The Checklist Criteria
