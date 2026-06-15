@@ -88,31 +88,24 @@ the Tier 2 line, the algorithms trigger a massive cascade of forced market order
 directly into the Tier 3 Skew-Adjusted Vertex, filling the market-maker's resting buy limits 
 instantly.
 
+### SECTION 3: THE MATHEMATICAL ENGINE
 
-SECTION 3: THE MATHEMATICAL ENGINE
+#### The Flawed Formula (Tier 2 Smart Retail Bait)
+Standard retail platforms and basic toolkits calculate option walls using a static, linear summation of contract exposure. This model assumes a constant volatility variable across the horizontal strike array, producing a false reading:
 
+$$\text{GEX}_{\text{Nominal}}(K) = \sum \left[ \text{OI}_{\text{Calls}}(K) \times \Gamma_{\text{Calls}}(K) \right] - \sum \left[ \text{OI}_{\text{Puts}}(K) \times \Gamma_{\text{Puts}}(K) \right]$$
 
-The Flawed Formula (Tier 2 Smart Retail Bait)
-Standard retail platforms and basic toolkits calculate option walls using a static, linear 
-summation of contract exposure. This model assumes a constant volatility variable across the
-horizontal strike array, producing a false reading:
+#### The Algorithmic Formula (Tier 3 Institutional Vertex)
+HFT execution systems bypass linear models. They scale unhedged option volumes directly against the directional volatility premium of the market smile:
 
-\(\text{GEX}_{\text{Nominal}}(K)=\sum \left[\text{OI}_{\text{Calls}}(K)\times \Gamma _{\text{Calls}}(K)\right]-\sum \left[\text{OI}_{\text{Puts}}(K)\times \Gamma _{\text{Puts}}(K)\right]\)
+$$\text{GEX}_{\text{Skew-Adjusted}}(K) = \text{OI}(K) \times \left[ \frac{\partial \Delta (K)}{\partial S} \times \left(1 + \frac{\partial \sigma (K)}{\partial K}\right) \right] \times \Phi_{\text{LOB}}$$
 
-The Algorithmic Formula (Tier 3 Institutional Vertex
-)HFT execution systems bypass linear models. 
-They scale unhedged option volumes directly against the directional volatility premium of the market smile:
-\(\text{GEX}_{\text{Skew-Adjusted}}(K)=\text{OI}(K)\times \left[\frac{\partial \Delta (K)}{\partial S}\times \left(1+\frac{\partial \sigma (K)}{\partial K}\right)\right]\times \Phi _{\text{LOB}}\)
+**Where:**
 
-Where:
-
-.OI(K) = Raw contract volume at strike K
-.\(\frac{\partial \Delta (K)}{\partial S}\) = The dynamic Gamma variable (real-time dealer delta acceleration per dollar shift in spot price)
-
-.\(\frac{\partial \sigma (K)}{\partial K}\) = The Volatility Skew Gradient (the partial derivative of implied volatility relative to strike 
-shifts across the tail of the smile)
-
-.\(\Phi _{\text{LOB}}\) = The Limit Order Book Elasticity Coefficient, adjusting for cross-exchange liquidity depletion during a flush.
+* **$\text{OI}(K)$** = Raw contract volume at strike $K$
+* **$\frac{\partial \Delta (K)}{\partial S}$** = The dynamic Gamma variable (real-time dealer delta acceleration per dollar shift in spot price)
+* **$\frac{\partial \sigma (K)}{\partial K}$** = The Volatility Skew Gradient (the partial derivative of implied volatility relative to strike shifts across the tail of the smile)
+* **$\Phi_{\text{LOB}}$** = The Limit Order Book Elasticity Coefficient, adjusting for cross-exchange liquidity depletion during a flush
 
 
 SECTION 4: THE TIMELINE MATRIX (WHEN TO USE IT)
