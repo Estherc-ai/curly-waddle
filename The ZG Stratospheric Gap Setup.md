@@ -130,3 +130,9 @@ You must immediately abort the setup or stand aside if any of the following anti
 
 * ⚠️ The Immediate ZG Candle Body Crack: If the opening 5-minute or 15-minute candle body dumps violently and closes below the Zero-Gamma Pivot line, the Stratospheric Gap is structurally broken. This proves that market makers have flipped into a negative gamma regime where they must aggressively short futures, turning the vacuum drive into a liquidation cascade.
 * ⚠️ The Open Interest Net GEX Collapse (The Hollow Rise): If the asset price continues to rise but the OI Net GEX box on the dashboard plummets significantly (e.g., dropping from +1.50 down to <0.30), the fuel for the move is completely exhausted. This indicates institutional profit-taking and contract closing. The market is rising on a hollow short-covering loop that is highly vulnerable to an immediate afternoon roll-over or a flat, low-volume sideways chop.
+  
+
+
+⚠️ The Price Rise / IV Rise Divergence at Key Walls: If the price approaches the Master Target Wall while Implied Volatility (IV) and VIX violently spike in tandem, the market has transitioned into a highly volatile High IV short-gamma squeeze loop. While this can accelerate the upside, it means the walls are completely fluid. Do NOT assume the target wall will hold as resistance; it is highly vulnerable to a complete blowout.
+
+⚠️ The VIX Hook on the Downside Flush: During the 11:30 AM London close pullback, if the price drops to the target wall but the VIX continues to spike aggressively upward without crushing back down, it warns you that panic put-buying has entered the tape. The wall is failing, and you must stand aside as a deeper liquidation cascade is taking over.
