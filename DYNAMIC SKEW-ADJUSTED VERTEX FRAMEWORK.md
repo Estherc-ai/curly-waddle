@@ -1,5 +1,6 @@
 ==========================================
-QUANTITATIVE DERIVATIVES STUDY LOG: THE COMPLETE DYNAMIC SKEW-ADJUSTED VERTEX FRAMEWORK
+QUANTITATIVE DERIVATIVES STUDY LOG: 
+THE Complete Dynamic Skew Adjusted Vertex Framework 
 ==========================================
 
 The Playbook Rule: Use this fixed coordinate exclusively to capture the initial, high-volume cash open flush.
