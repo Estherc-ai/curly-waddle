@@ -6,6 +6,7 @@ The Playbook Rule: Use this fixed coordinate exclusively to capture the initial,
 It tells you exactly where the "trampoline button" sits to halt the opening volatility cascade.
 
 
+
 SECTION 1: MASTER DEFINITIONS (THE CORE ARCHITECTURE)
 
 📊 The Professional Definition:  The Dynamic Skew-Adjusted Vertex is the mathematically 
@@ -42,6 +43,9 @@ possesses massive physical weight.The Skew-Adjusted Vertex is that hidden column
 When a falling market slams into it, it hits an unyielding block of ice. 
 The market-maker's automated systems hit their ultimate "trampoline button," instantly turning on a massive
 buy switch that causes the price to violently reverse upward.
+
+
+
 
 SECTION 2: THE OPERATIONAL MATRIX (THE GRID DESIGN)
 To strip away market noise, institutional execution desks map the market using a structured,
@@ -87,6 +91,9 @@ traders who are trying to buy the unadjusted, raw Put Wall. By forcing the price
 the Tier 2 line, the algorithms trigger a massive cascade of forced market orders that pour
 directly into the Tier 3 Skew-Adjusted Vertex, filling the market-maker's resting buy limits 
 instantly.
+
+
+
 
 ### SECTION 3: THE MATHEMATICAL ENGINE
 
