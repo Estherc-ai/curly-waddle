@@ -16,25 +16,29 @@ To validate the setup before the regular trading hours (RTH) session begins (09:
 
 ---
 
-## 2. Velocity Throttle Matrix: Wide Spread vs Tight Spread
+====================================================================================================
+THE VELOCITY THROTTLE MATRIX (COMPACT 80-CHARACTER MAXIMUM FOR GITHUB/MOBILE MARKDOWN)
+====================================================================================================
 
-The width of the opening bid-ask spread does not alter the ultimate destination (the dominant Call Wall). Instead, it acts as the mechanical throttle that determines the speed, trajectory, and psychological complexity of the journey.
+The width of the opening bid-ask spread does not alter the ultimate destination 
+(the dominant Call Wall). Instead, it acts as the mechanical throttle that 
+determines the speed, trajectory, and psychological complexity of the journey.
 
+┌──────────────────────────────────────────────────────────────────────────┐
+│                       ZG STRATOSPHERIC GAP OPENING                       │
+└────────────────────────────────────┬─────────────────────────────────────┘
+                                     │
+                  ┌──────────────────┴──────────────────┐
+                  ▼                                     ▼
+    ┌───────────────────────────┐         ┌───────────────────────────┐
+    │     WIDE SPREAD OPEN      │         │     TIGHT SPREAD OPEN     │
+    ├───────────────────────────┤         ├───────────────────────────┤
+    │ • MM Risk Uncertainty     │         │ • MM Risk Already Synced  │
+    │ • Slow TWAP/VWAP Churn    │         │ • Immediate Market Orders │
+    │ • Agonizing Morning Range │         │ • High-Velocity Sprint    │
+    │ • Wait for "Spread-Snap"  │         │ • Instant Body Breakout   │
+    └───────────────────────────┘         └───────────────────────────┘
 
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                   ZG STRATOSPHERIC GAP OPENING                                   │
-└────────────────────────────────────────────────┬─────────────────────────────────────────────────┘
-                                                 │
-                        ┌────────────────────────┴────────────────────────┐
-                        ▼                                                 ▼
-          ┌───────────────────────────┐                     ┌───────────────────────────┐
-          │     WIDE SPREAD OPEN      │                     │     TIGHT SPREAD OPEN     │
-          ├───────────────────────────┤                     ├───────────────────────────┤
-          │ • MM Risk Uncertainty     │                     │ • MM Risk Already Synced  │
-          │ • Slow TWAP/VWAP Churn    │                     │ • Immediate Market Orders │
-          │ • Agonizing Morning Range │                     │ • High-Velocity Sprint    │
-          │ • Wait for "Spread-Snap"  │                     │ • Instant Body Breakout   │
-          └───────────────────────────┘                     └───────────────────────────┘
 
 
 ### A. The Wide-Spread Regime (The Slow Throttle)
