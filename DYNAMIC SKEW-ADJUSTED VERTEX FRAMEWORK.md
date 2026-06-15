@@ -116,7 +116,7 @@ $$\text{GEX}_{\text{Skew-Adjusted}}(K) = \text{OI}(K) \times \left[ \frac{\parti
 
 
 
-###SECTION 4: THE TIMELINE MATRIX (WHEN TO USE IT)
+### SECTION 4: THE TIMELINE MATRIX (WHEN TO USE IT)
 The Skew-Adjusted Vertex exhibits a dual nature. It is simultaneously a static pre-market anchor and a live, fluid calculation. 
 You must apply completely different execution rules based on the market clock.
 
@@ -140,7 +140,7 @@ You must check your terminal for the live, dynamically updated calculation.
 As new fear injections or volume clusters hit the tape, the vertex will drift live to a brand-new strike price anchor.
 
 
-SECTION 5: THE VOLATILITY TAPE FILTER (HOW TO CONFIRM THE ENGINE)
+### SECTION 5: THE VOLATILITY TAPE FILTER (HOW TO CONFIRM THE ENGINE)
 
 To confirm whether a structural level is going to act as an immediate reversal trampoline or completely break down,
 you must cross-reference price action with at-the-money (ATM) Implied Volatility (IV).
@@ -164,7 +164,7 @@ The Execution: Abort all long positions immediately. The structural architecture
 momentum short posture to ride the institutional liquidation cascade downward.
 
 
-SECTION 6: UNMASKING SYSTEMIC ILLUSIONS
+### SECTION 6: UNMASKING SYSTEMIC ILLUSIONS
 
 The 5-Minute "Fake Out" CloseDuring high-velocity opening hours, a 5-minute candle body will frequently close completely
 below your pre-market Sweep Zone boundary. Retail traders see this and short the market, thinking the breakdown is real.
@@ -186,7 +186,7 @@ still actively crushing, do not short. The machine is still buying. It has simpl
 Follow the drift down to the macro firewall, wait for the volume absorption spike, and execute your long position there.
 
 
-SECTION 7: CORE METRIC COMPARISON REFERENCE
+### SECTION 7: CORE METRIC COMPARISON REFERENCE
 To avoid misallocating capital, you must explicitly separate the operational roles of the main framework boundaries from
 the secondary option indicators:
 
